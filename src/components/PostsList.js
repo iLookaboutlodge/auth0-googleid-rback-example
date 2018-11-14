@@ -9,6 +9,7 @@ const PostsList = () => (
     {({user}) => (
       <div>
         <h2>Posts List</h2>
+        <a href="http://demo-app.rebloc.io:3000">Demo!</a>
         <table className="table">
           <thead>
           <tr>
