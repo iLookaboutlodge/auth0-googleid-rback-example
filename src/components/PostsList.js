@@ -31,9 +31,8 @@ const PostsList = () => (
                     postOwnerId: post.ownerId
                   }}
                   yes={() => (
-                    <a href="http://demo-app.rebloc.io:3001">Demo!</a>
                     <button className="btn btn-sm btn-default">
-                      Edit Post
+                      <a href="http://demo-app.rebloc.io:3001">Demo!</a>
                     </button>
                   )}
                 />
