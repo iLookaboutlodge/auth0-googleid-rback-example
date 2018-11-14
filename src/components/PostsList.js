@@ -9,7 +9,6 @@ const PostsList = () => (
     {({user}) => (
       <div>
         <h2>Posts List</h2>
-        <a href="http://demo-app.rebloc.io:3000">Demo!</a>
         <table className="table">
           <thead>
           <tr>
@@ -32,6 +31,7 @@ const PostsList = () => (
                     postOwnerId: post.ownerId
                   }}
                   yes={() => (
+                    <a href="http://demo-app.rebloc.io:3001">Demo!</a>
                     <button className="btn btn-sm btn-default">
                       Edit Post
                     </button>
