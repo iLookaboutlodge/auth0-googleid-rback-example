@@ -25,7 +25,7 @@ class Auth extends Component {
     auth.authorize();
   };
 
-  logout = () => {
+  /* logout = () => {
     this.setState({
       authenticated: false,
       user: {
@@ -34,7 +34,14 @@ class Auth extends Component {
       accessToken: ""
     });
   };
-
+ */
+  logout = () => {
+    this.auth.logout({
+      returnTo: 'http://demo-app.rebloc.io:3000',
+      clientID: 'fnLCIbVoycyrbNwmip5aWFLEtAyfdSYF',
+    });
+  };
+ 
   handleAuthentication = () => {
     auth.parseHash((error, authResult) => {
       if (error) {

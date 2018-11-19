@@ -16,12 +16,18 @@ const DashboardPage = () => (
         yes={() => (
           <div>
             <h1>Dashboard</h1>
-            <Logout />
+            <a href='https://rebloc.auth0.com/v2/logout'> Logout </a>
             <Profile />
             <PostsList />
           </div>
         )}
-        no={() => <Redirect to="/" />}
+        no={() => ( 
+          <div>
+            <h1>Return to home page or Logout</h1>
+            <a href="http://demo-app.rebloc.io:3000"> Home </a>
+            <Logout />
+          </div>
+        )}
       />
     )}
   </AuthConsumer>

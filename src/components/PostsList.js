@@ -32,7 +32,7 @@ const PostsList = () => (
                   }}
                   yes={() => (
                     <button className="btn btn-sm btn-default">
-                      <a href="http://demo-app.rebloc.io:3001">Demo!</a>
+                        Edit Post
                     </button>
                   )}
                 />
